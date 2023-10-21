@@ -4,29 +4,39 @@
     display: flex;
     white-space: nowrap;
     background-color: #071952;
-      padding: 15px 0;
+    padding: 15px 0;
   }
   
   .crypto-list {
     display: flex;
-    animation: scroll 50s linear infinite;
+    animation: scroll 25s linear infinite;
     white-space: nowrap;
     color: #fff;
   }
   
+  .crypto-icon {
+    width: 32px; /* Set the width to your desired size */
+    height: 32px; /* Set the height to your desired size */
+    margin-right: 15px;
+    margin-bottom:25px;
+
+}
+  
   .crypto-item {
     min-width: 300px; /* Adjust the width as needed */
-    margin: 0 10px; /* Add horizontal margin between items */
+    margin: 0 20px; /* Add horizontal margin between items (increased from 10px to 20px) */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* margin-bottom: 10px; Reduce the margin-bottom to move items up */
   }
   
   .crypto-left {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-right: 10px;
+    margin-right: 80px;
+    padding-bottom: 5px; /* Reduce the padding-bottom to move text up */
   }
   
   .crypto-right {
@@ -34,37 +44,39 @@
     flex-direction: column;
     align-items: flex-start;
     padding-right: 20px;
+    padding-bottom: 5px; /* Reduce the padding-bottom to move text up */
   }
   
-  .crypto-name{
-      font-size:25px;
-      padding-bottom: 5px;
+  .crypto-name {
+    font-size: 25px;
+    padding-bottom: 5px;
   }
-  .crypto-symbol{
-      font-size:20px;
-      color: grey;
+  
+  .crypto-symbol {
+    font-size: 20px;
+    color: grey;
   }
   
   .crypto-price,
   .crypto-24hr-change {
     margin-top: 5px;
     font-size: 20px;
-    
   }
-  .crypto-price{
+  
+  .crypto-price {
     padding-bottom: 5px;
-   
   }
+  
   .crypto-24hr-change {
     font-weight: 500;
   }
   
   .positive {
-    color: green;
+    color: rgb(116, 254, 116);
   }
   
   .negative {
-    color: red;
+    color: rgb(231, 76, 76);
   }
   
   @keyframes scroll {
@@ -75,3 +87,4 @@
       transform: translateX(-100%);
     }
   }
+  
