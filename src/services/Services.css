@@ -1,0 +1,92 @@
+/* Styles for larger screens */
+.subscription {
+  background-color: #001d3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.top-heading {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 25px;
+  font-family: "Inter", sans-serif;
+  color: #192655;
+}
+
+.rectangular-container {
+  width: 90%;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align the content */
+  padding: 20px;
+  margin-top: 20px; /* Adjust margin for better spacing */
+}
+
+.sectionss {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Add space between sections */
+}
+
+.leftt, .midd, .rightt {
+  flex: 0 0 30%; /* Slightly adjust the width for better spacing */
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.img-icons {
+  height: 110px;
+  width: 110px;
+  padding-bottom: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.leftt h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+}
+
+.midd h1, .rightt h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+}
+
+.leftt p, .midd p, .rightt p {
+  font-size: 15px;
+  font-family: 'Nunito', sans-serif;
+  padding-top: 10px; /* Slightly reduce the padding for better spacing */
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 700px) {
+  .subscription {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+    height: auto; /* Allow content to determine the container's height */
+  }
+
+  .rectangular-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%; /* Take up full width */
+    height: auto; /* Adjust height for content */
+    border-radius: 10px; /* Reset border radius for smaller screens */
+  }
+
+  .sectionss {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+  }
+
+  .leftt, .midd, .rightt {
+    flex: 1; /* Each section takes up full width */
+    margin-top: 10px; /* Adjust margin for spacing */
+  }
+}
