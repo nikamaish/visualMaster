@@ -51,7 +51,7 @@ const Broadcast = () => {
 
   return (
     <div>
-      <h1>Real-Time Crypto Data</h1>
+      {/* <h1>Real-Time Crypto Data</h1> */}
       <div className="crypto-list-container">
         <div className="crypto-list">
           {cryptoData.map((crypto, index) => (
