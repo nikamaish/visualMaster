@@ -17,7 +17,7 @@ const Footer=()=>{
                 </ul>
 
                 <div className='footer_right'>
-                    <p className='copywrite'>Copywrite@Team_Visual_Master</p>
+                    <p className='copywrite'>copyright@Team_Visual_Master</p>
                 </div>
            </div>
         </footer>
