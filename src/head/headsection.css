@@ -1,0 +1,255 @@
+/* Navbar.css */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+.navbar {
+  background-color: #061E45; /* Dark background color */
+  color: #fff; /* Text color */
+  padding: 10px 20px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: #fff; /* Logo text color */
+  text-decoration: none;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-logo:hover {
+  color: cyan; /* Change color on hover */
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: none; /* Initially hide the button */
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  width: 30px;
+  /* height: 30px; Adjust the height as needed for your design */
+  background-color: #fff;
+  transition: 0.4s;
+  position: relative;
+  margin-left: 200px;
+}
+.menu-icon span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff; 
+  transition: 0.4s;
+}
+
+.menu-icon.active span:nth-child(1) {
+  transform: rotate(45deg) translate(-5px, 6px);
+}
+
+.menu-icon.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(-5px, -6px);
+}
+
+.menu-icon.active .close-icon {
+  display: block; /* Display the X sign when the menu is active */
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-items {
+  list-style: none;
+  display: flex;
+  margin: -10px;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.navbar-items.active {
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* Adjust as needed to position the menu below the navbar */
+  right: 0;
+  background-color: black;
+  z-index: 1;
+  opacity: 0.95;
+}
+
+.navbar-items li {
+  display: inline;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.navbar-items a {
+  color: #fff; /* Link color */
+  text-decoration: none;
+}
+
+.navbar-items a:hover {
+  color: cyan; /* Change link color on hover */
+}
+
+/* Media query for responsive menu */
+@media (max-width: 700px) {
+  .menu-button {
+    display: block; /* Show the button */
+
+  }
+
+  .navbar-items {
+    display: none; /* Hide the menu items */
+  }
+
+  .navbar-items.active {
+      /* please for toggle make changes here */
+    display: flex;
+    width: 250px;
+    height: 350px;
+    flex-direction: column;
+      align-items:normal;
+      margin:-3px -50px 0 0 ;
+      padding: 20px 0 0 10px; 
+      position: absolute;
+      top: 60px; /* Adjust as needed to position the menu below the navbar */
+      right: 20px; 
+      background-color: black;
+      z-index: 1;
+      opacity: 0.95;
+      transform: translateY(0); /* Ensure the menu touches the navbar when active */
+      transition: transform 5s ease; 
+  }
+
+  .navbar-items li {
+      padding:30px
+  }
+  .navbar-items li:hover{
+      font-size: 25px;
+  }
+}
+.Hero_Section{
+  background-color: #101010;
+  display: flex;
+
+}
+
+.Left_Section{
+
+  color: white;
+}
+
+.Right_Section{
+  width: 30%;
+  height: auto;
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-bottom: 100px;
+}
+
+h2{
+  margin-top: 8%;
+  margin-left: 10%;
+  margin-bottom: 1%;
+}
+
+p{
+  margin-top: 1px;
+  margin-left: 10%;
+}
+
+.Second_h2{
+  margin-top: 14%;
+  margin-left: 18%;
+}
+
+.logos{
+  width: 35px;
+  margin: 0px 10px;
+}
+
+.icons
+{
+  margin-top: 20px;
+  margin-left: 120px;
+}
+
+
+.First_Image{
+margin-left: 18%;
+padding-top: 2px;
+margin-top: 1%;
+}
+
+.Lower_Section{
+  background-color: #001d3d;
+  color: azure;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  font-size:x-large;
+  font-weight:bolder;
+}
+
+.EU{
+  border: 3px;
+  border-left: white;
+  
+}
+/* @media screen and (max-width: 480px) {
+  .menu-button{
+
+  }
+} */
+
+/* Desktop styles */
+.Lower_Section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Lower_Section ul {
+  flex: 1;
+  text-align: center;
+  padding: 0;
+  border: none;
+  height: auto;
+}
+
+/* Mobile styles using media queries */
+@media (max-width: 767px) {
+  .Lower_Section {
+    flex-direction: column;
+  }
+
+  .Lower_Section ul {
+    border-right: none;
+    border-left: none;
+    padding: 10px;
+    height: auto;
+  }
+
+  .responsive-item {
+    border: 3px solid white;
+    margin: 10px 0;
+  }
+}

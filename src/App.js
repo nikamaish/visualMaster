@@ -1,5 +1,5 @@
 import React from 'react'
-// import CryptoGraphs from './Cryptographs'
+import CryptoGraphs from './Cryptographs'
 import Services from './services/Services'
 // import cryptoData from './cryptoData/Cryptodata'
 import './broadcast/Broadcast' 
@@ -17,9 +17,9 @@ const App = () => {
   return (
     <div className='App'>
   {/* <CryptoGraphs/>       */}
-  {/* <Services/> */}
-  {/* <CryptoWidget/> */}
-  {/* <RealTimeData/> */}
+  {/* <Services/>
+  <CryptoWidget/>
+  <RealTimeData/> */}
   
   
   <Navbar/>
