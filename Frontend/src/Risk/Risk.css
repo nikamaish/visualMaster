@@ -1,0 +1,68 @@
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&family=PT+Serif:wght@400;700&display=swap');
+
+
+.risk {
+    background-color: #001d3d;
+    max-height: 140vh;
+}
+.riskwarning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.risk-rectangular-container {
+    width: 90%; 
+    padding: 30px;
+    margin-top: 20vh; 
+    background-color: #010b25;
+    border: 1px solid #010b25; 
+    text-align: center; 
+    height: 80vh;
+    color: azure;
+    border-radius: 5px;
+
+}
+
+.risk-heading {
+    text-align: center;
+    font-weight: 700;
+    color: #f4f0ec;
+    font-size: 28px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    font-family: 'PT Serif', serif;
+    padding-bottom: 2%;
+}
+
+.risk-para {
+    margin: 0; /* Remove default margin for the paragraph */
+    color: #e5e4e2;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 700px) {
+    .risk{
+        height: 120vh;
+    }
+    .risk-rectangular-container{ 
+    height: auto;
+    margin-top: 25vh;
+    }
+    .risk-para{
+        padding-top: 15px;
+    }
+
+}
+
+@media (min-width: 300px) {
+    .risk {
+        height: 150vh;
+    }
+}

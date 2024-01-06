@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&family=PT+Serif:wght@400;700&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.navbar{
+  background-color: #010B25;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.Hero_Section{
+  background-color: #101010;
+  display: flex;
+
+}
+
+.Left_Section{
+  padding-top: 5px;
+  color: white;
+
+}
+.Left_Section p{
+  padding-top: 20px;
+  font-size: 28px;
+  font-family: 'PT Serif', serif;
+}
+
+.Right_Section{
+  width: 30%;
+  height: auto;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-bottom: 100px;
+  flex: 1;
+}
+.Right_Section img{
+  width: 70vh;
+  height: 70vh;
+}
+h2{
+  margin-top: 8%;
+  margin-left: 10%;
+  margin-bottom: 1%;
+}
+
+p{
+  margin-top: 1px;
+  margin-left: 10%;
+}
+
+.Second_h2{
+  margin-top: 14%;
+  padding-left: 50px ;
+  margin-bottom: 1%;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* margin-left: 18%; */
+}
+
+.logos{
+  width: 35px;
+  margin: 20px 20px;
+  cursor: pointer;
+  color: azure;
+  
+}
+
+.icons
+{
+  /* margin-top: 20px; */
+  margin-left: 120px;
+}
+
+
+.First_Image{
+margin-left: 18%;
+padding-top: 2px;
+margin-top: 1%;
+}
+
+.Lower_Section{
+  background-color: #001d3d;
+  color: azure;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  font-size:x-large;
+  font-weight:bolder;
+  flex: 1;
+}
+.Lower_Section .vertical-line{
+  border-right: 3px solid white;
+  border-left: 3px solid white;
+  padding: 0 90px; 
+  height: 40px;
+}
+
+.EU{
+  border: 3px;
+  border-left: white;
+  
+}
+
+@media (max-width: 600px) {
+
+  .Hero_Section {
+    flex-direction: column; /* Stack the sections on small devices */
+  }
+  .Lower_Section {
+      flex-direction: column; 
+      align-items: center; 
+      text-align: center; 
+      padding: 15px; 
+      border: none;
+      font-size: large; /* Adjust font size for smaller screens */
+  }
+  .Lower_Section ul {
+    position: relative;
+    border: none;
+    margin: 5px; /* Adjust margin for spacing between items */
+    padding: 20px 20px; /* Adjust padding for spacing between text and line */
+   
+}
+.Lower_Section .vertical-line{
+  border: none;
+  padding: 0 90px; 
+  height: 40px;
+}
+
+.Lower_Section ul::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid white;
+}
+.Right_Section img{
+  margin-left: 10vh;
+  width: 30vh;
+  height: 30vh;
+}
+}

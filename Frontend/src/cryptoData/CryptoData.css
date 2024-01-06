@@ -1,0 +1,116 @@
+/* Apply styling to the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Style table headers */
+th {
+  color: #ffffff;
+  padding: 10px;
+  padding-left: 40px;
+  text-align: left;
+  background-color: #010b25;
+}
+
+/* Style table cells */
+td {
+  padding: 10px;
+  padding-left: 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.rank-cell {
+  padding-right: 1px;
+}
+
+.name-cell {
+  padding-left: 1px;
+  padding-right: 50px;
+}
+
+/* Apply alternate row background color */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Add styling to the crypto icon column */
+.crypto-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.crypto-name {
+  font-size: 20px;
+}
+
+.crypto-symbol {
+  font-size: 12px;
+}
+
+/* Style the crypto name and icon */
+.crypto-icon img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+/* Style the name column */
+.crypto-name {
+  font-weight: bold;
+}
+
+/* Apply specific styling to the 24Hr Change column */
+td.positive {
+  color: #32cd32;
+}
+
+td.positive:before {
+  content: "+";
+}
+
+td.negative {
+  color: #ff0000;
+}
+
+td.negative:before {
+  content: "";
+}
+
+.positive-price-row {
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+.negative-price-row {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+/* Responsive styling for small devices */
+@media only screen and (max-width: 600px) {
+  th, td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .crypto-name {
+    font-size: 16px;
+  }
+
+  .crypto-symbol {
+    font-size: 10px;
+  }
+
+  .crypto-icon img {
+    width: 20px;
+    margin-right: 5px;
+  }
+}
+
+/* Additional styling for larger devices */
+@media only screen and (min-width: 768px) {
+  .name-cell {
+    padding-right: 100px; /* Adjust the padding for larger devices */
+  }
+}
