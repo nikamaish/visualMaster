@@ -60,11 +60,8 @@
 @media (max-width: 768px) {
     .container {
       flex-direction: column;
-      height: 100vh;
     }
-    .heading-name{
-    font-size: 30px;
-  }
+  
     .help-heading {
       font-size: 24px;
     }
@@ -75,16 +72,12 @@
     }
   
     .help-para {
-      padding:0 20px 20px 20px;
+      padding: 0 20px;
     }
   }
   
   /* Additional CSS for even smaller screens */
-  @media (max-width: 436px) {
-    .container{
-      margin-top: 0;
-      height: 160vh;
-    }
+  @media (max-width: 480px) {
     .help-para {
       font-size: 16px;
     }
